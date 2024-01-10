@@ -295,6 +295,7 @@ class AdminPage:
         self.tree.place(x=300, y=50)
 
         # Set the width of each column
+        
         self.tree.column("ID", width=50)
         self.tree.column("pickup date", width=100)
         self.tree.column("pickup time", width=100)

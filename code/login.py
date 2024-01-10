@@ -35,6 +35,7 @@ class LoginPage:
         self.style.theme_use("clam")
 
         # Increase font size
+        
         self.style.configure(".", font=("Helvetica", 14))
 
         # GUI Components for Login
@@ -61,14 +62,13 @@ class LoginPage:
             email = self.email_var.get()
             password = self.password_var.get()
             user_data = self.check_credentials(email, password)
-            user_name=user_data[0]
-            driver=user_data[0]
-            print('value:',user_name)
-            print('value2:',driver)
+            
 
         # Check login credentials
             
             if user_data:
+                user_name=user_data[0]
+                driver=user_data[0]
                 # Extract the user's name from the fetched data
                 set_global_data(email, user_name,driver)
                 testglobal()
